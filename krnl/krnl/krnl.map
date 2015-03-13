@@ -1,0 +1,255 @@
+ krnl
+
+ Timestamp is 531166a3 (Sat Mar 01 12:48:35 2014)
+
+ Preferred load address is 00040000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00004452H .text                   CODE
+ 0002:00000000 000007afH .rdata                  DATA
+ 0003:00000000 000006ecH .data                   DATA
+ 0003:000006f0 00004572H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       ?divide_by_zero_fault@@YAXIII@Z 00040400 f   exception.obj
+ 0001:00000050       ?single_step_trap@@YAXIII@Z 00040450 f   exception.obj
+ 0001:000000a0       ?nmi_trap@@YAXIII@Z        000404a0 f   exception.obj
+ 0001:000000f0       ?breakpoint_trap@@YAXIII@Z 000404f0 f   exception.obj
+ 0001:00000140       ?overflow_trap@@YAXIII@Z   00040540 f   exception.obj
+ 0001:00000190       ?bounds_check_fault@@YAXIII@Z 00040590 f   exception.obj
+ 0001:000001e0       ?invalid_opcode_fault@@YAXIII@Z 000405e0 f   exception.obj
+ 0001:00000230       ?no_device_fault@@YAXIII@Z 00040630 f   exception.obj
+ 0001:00000280       ?double_fault_abort@@YAXIIII@Z 00040680 f   exception.obj
+ 0001:000002d0       ?invalid_tss_fault@@YAXIIII@Z 000406d0 f   exception.obj
+ 0001:00000320       ?no_segment_fault@@YAXIIII@Z 00040720 f   exception.obj
+ 0001:00000370       ?stack_fault@@YAXIIII@Z    00040770 f   exception.obj
+ 0001:000003c0       ?general_protection_fault@@YAXIIII@Z 000407c0 f   exception.obj
+ 0001:00000410       ?page_fault@@YAXIIII@Z     00040810 f   exception.obj
+ 0001:00000470       ?fpu_fault@@YAXIII@Z       00040870 f   exception.obj
+ 0001:000004c0       ?alignment_check_fault@@YAXIIII@Z 000408c0 f   exception.obj
+ 0001:00000510       ?machine_check_abort@@YAXIII@Z 00040910 f   exception.obj
+ 0001:00000560       ?simd_fpu_fault@@YAXIII@Z  00040960 f   exception.obj
+ 0001:000005b0       ?install_def_irq@@YAXXZ    000409b0 f   exception.obj
+ 0001:000006a0       ?kernel_main@@YAHPAU_tag_boot_info@@@Z 00040aa0 f   main.obj
+ 0001:00000780       ?delay@@YAXI@Z             00040b80 f   proc.obj
+ 0001:000007b0       ?ldt_set_descriptor@@YAXPAU_tagLDT_DESCRIPTOR@@IIG@Z 00040bb0 f   proc.obj
+ 0001:00000800       ?i86_ldt_initialize@@YAHXZ 00040c00 f   proc.obj
+ 0001:00000850       ?i86_tss_initialize@@YAHXZ 00040c50 f   proc.obj
+ 0001:000008a0       ?restart@@YAXXZ            00040ca0 f   proc.obj
+ 0001:000008e0       ?task_start@@YAXXZ         00040ce0 f   proc.obj
+ 0001:000008f0       ?restart_reenter@@YAXXZ    00040cf0 f   proc.obj
+ 0001:00000910       ?_save@@YAXXZ              00040d10 f   proc.obj
+ 0001:00000960       ?schedule@@YAXXZ           00040d60 f   proc.obj
+ 0001:000009a0       ?TestA@@YAXXZ              00040da0 f   proc.obj
+ 0001:000009f0       ?Init@@YAXXZ               00040df0 f   proc.obj
+ 0001:00000a30       ?init_proc@@YAXXZ          00040e30 f   proc.obj
+ 0001:00000ba0       ?clock_irq@@YAXXZ          00040fa0 f   proc.obj
+ 0001:00000be0       ?i86_initialize_clock_irq@@YAHXZ 00040fe0 f   proc.obj
+ 0001:00000c10       ?sys_call@@YAXXZ           00041010 f   syscall.obj
+ 0001:00000c60       ?sys_printx@@YAHPADHPAU_tagPROC@@@Z 00041060 f   syscall.obj
+ 0001:00000ca0       ?sys_send@@YAHHPAU_tagMESSAGE@@PAU_tagPROC@@@Z 000410a0 f   syscall.obj
+ 0001:00000cd0       ?sys_recv@@YAHHPAU_tagMESSAGE@@PAU_tagPROC@@@Z 000410d0 f   syscall.obj
+ 0001:00000d00       ?get_ticks@@YAHXZ          00041100 f   syscall.obj
+ 0001:00000d30       ?init_syscall@@YAHXZ       00041130 f   syscall.obj
+ 0001:00000d50       ?pmmgr_init_region@@YAXII@Z 00041150 f   pmm.obj
+ 0001:00000dc0       ?pmmgr_deinit_region@@YAXII@Z 000411c0 f   pmm.obj
+ 0001:00000e30       ?pmmgr_free_blocks@@YAXPAXI@Z 00041230 f   pmm.obj
+ 0001:00000e90       ?mmap_first_free@@YAHXZ    00041290 f   pmm.obj
+ 0001:00000ee0       ?mmap_first_free_s@@YAHI@Z 000412e0 f   pmm.obj
+ 0001:00000ff0       ?pmmgr_init@@YAXII@Z       000413f0 f   pmm.obj
+ 0001:00001030       ?pmmgr_alloc_blocks@@YAPAXI@Z 00041430 f   pmm.obj
+ 0001:000010b0       ?do_fork@@YAHPAU_tagMESSAGE@@@Z 000414b0 f   sys.obj
+ 0001:00001240       ?do_excute@@YAHPAU_tagMESSAGE@@@Z 00041640 f   sys.obj
+ 0001:00001450       ?do_exit@@YAXPAU_tagMESSAGE@@H@Z 00041850 f   sys.obj
+ 0001:000014c0       ?task_sys@@YAXXZ           000418c0 f   sys.obj
+ 0001:00001590       ?va2la@@YAPAXHPAX@Z        00041990 f   vmm.obj
+ 0001:000015c0       ?i86_cpu_initialize@@YAHXZ 000419c0 f   cpu.obj
+ 0001:000015e0       ?dma_mask_channel@@YAXE@Z  000419e0 f   dma.obj
+ 0001:00001620       ?dma_unmask_all@@YAXH@Z    00041a20 f   dma.obj
+ 0001:00001640       ?dma_reset@@YAXH@Z         00041a40 f   dma.obj
+ 0001:00001650       ?dma_reset_flipflop@@YAXH@Z 00041a50 f   dma.obj
+ 0001:00001680       ?dma_set_address@@YAXEEE@Z 00041a80 f   dma.obj
+ 0001:00001710       ?dma_set_count@@YAXEEE@Z   00041b10 f   dma.obj
+ 0001:000017a0       ?dma_set_mode@@YAXEE@Z     00041ba0 f   dma.obj
+ 0001:00001810       ?dma_set_read@@YAXE@Z      00041c10 f   dma.obj
+ 0001:00001820       ?i86_set_gate@@YAXPAUgate@@GIEE@Z 00041c20 f   gate.obj
+ 0001:00001850       ?gdt_set_descriptor@@YAXIIIEE@Z 00041c50 f   gdt.obj
+ 0001:000018c0       ?gdt_set_descriptor@@YAXIIIG@Z 00041cc0 f   gdt.obj
+ 0001:000018f0       ?i86_gdt_initialize@@YAHXZ 00041cf0 f   gdt.obj
+ 0001:000019c0       ?setvect@@YAXHP6AXXZ@Z     00041dc0 f   hal.obj
+ 0001:000019e0       ?i86_hal_initialize@@YAHXZ 00041de0 f   hal.obj
+ 0001:00001a00       ?i86_default_handler@@YAXXZ 00041e00 f   idt.obj
+ 0001:00001a20       ?init_idt_desc@@YAXIP6AXXZEEG@Z 00041e20 f   idt.obj
+ 0001:00001a60       ?i86_idt_initialize@@YAHG@Z 00041e60 f   idt.obj
+ 0001:00001ad0       ?disable_interrupt@@YAXXZ  00041ed0 f   klib.obj
+ 0001:00001ae0       ?enable_interrupt@@YAXXZ   00041ee0 f   klib.obj
+ 0001:00001af0       ?out_byte@@YAXGE@Z         00041ef0 f   klib.obj
+ 0001:00001b00       ?in_byte@@YAEG@Z           00041f00 f   klib.obj
+ 0001:00001b10       ?enable_irq@@YAXH@Z        00041f10 f   klib.obj
+ 0001:00001b70       ?init_8259a@@YAXXZ         00041f70 f   pic.obj
+ 0001:00001bf0       ?i86_pic_initialize@@YAXXZ 00041ff0 f   pic.obj
+ 0001:00001c00       ?close@@YAHH@Z             00042000 f   close.obj
+ 0001:00001c30       ?exit@@YAXH@Z              00042030 f   exit.obj
+ 0001:00001c60       ?open@@YAHPAD@Z            00042060 f   open.obj
+ 0001:00001ca0       ?printf@@YAHPBDZZ          000420a0 f   printf.obj
+ 0001:00001ce0       ?printx@@YAHPADH@Z         000420e0 f   printx.obj
+ 0001:00001d00       ?read@@YAHHPADH@Z          00042100 f   read.obj
+ 0001:00001d40       ?recv@@YAHHPAU_tagMESSAGE@@@Z 00042140 f   recv.obj
+ 0001:00001d60       ?send@@YAHHPAU_tagMESSAGE@@@Z 00042160 f   send.obj
+ 0001:00001d80       ?send_recv@@YAHHHPAU_tagMESSAGE@@@Z 00042180 f   send_recv.obj
+ 0001:00001e00       ?size@@YAHH@Z              00042200 f   size.obj
+ 0001:00001e30       ?itoa@@YAXIIPAD@Z          00042230 f   stdio.obj
+ 0001:00001ea0       ?itoa_s@@YAXHIPAD@Z        000422a0 f   stdio.obj
+ 0001:00001ed0       ?strcpy@@YAPADPADPBD@Z     000422d0 f   string.obj
+ 0001:00001ef0       ?strlen@@YAIPBD@Z          000422f0 f   string.obj
+ 0001:00001f10       ?strcmp@@YAHPBD0@Z         00042310 f   string.obj
+ 0001:00001f50       ?memcpy@@YAPAXPAXPBXI@Z    00042350 f   string.obj
+ 0001:00001f80       ?memset@@YAPAXPAXDI@Z      00042380 f   string.obj
+ 0001:00001fa0       ?strchr@@YAPADPADH@Z       000423a0 f   string.obj
+ 0001:00001fd0       ?vsprintf@@YAHPADPBDPAE@Z  000423d0 f   vsprintf.obj
+ 0001:000021d0       ?DbgSetColor@@YAXE@Z       000425d0 f   dbg.obj
+ 0001:000021e0       ?putc@@YAXE@Z              000425e0 f   dbg.obj
+ 0001:000022c0       ?puts@@YAXPAD@Z            000426c0 f   dbg.obj
+ 0001:000022f0       ?DbgPrintf@@YAHPBDZZ       000426f0 f   dbg.obj
+ 0001:000024b0       ?DbgGotoXY@@YAXEE@Z        000428b0 f   dbg.obj
+ 0001:00002520       ?DbgCls@@YAXE@Z            00042920 f   dbg.obj
+ 0001:00002550       ?get_byte_from_kbuf@@YAEXZ 00042950 f   kbd.obj
+ 0001:000025a0       ?keyboard_read@@YAXPAU_tagTTY@@@Z 000429a0 f   kbd.obj
+ 0001:00002770       ?keyboard_irq@@YAXXZ       00042b70 f   kbd.obj
+ 0001:000027d0       ?initial_keyboard@@YAXXZ   00042bd0 f   kbd.obj
+ 0001:00002850       ?to_dos_filename@@YAXPBDPADI@Z 00042c50 f   fat12.obj
+ 0001:00002900       ?fsys_fat_directory@@YA?AU_FILE@@PBD@Z 00042d00 f   fat12.obj
+ 0001:000029c0       ?fsys_fat_read@@YAXPAU_FILE@@PAEI@Z 00042dc0 f   fat12.obj
+ 0001:00002a60       ?fsys_fat_close@@YAXPAU_FILE@@@Z 00042e60 f   fat12.obj
+ 0001:00002a70       ?fsys_fat_open_subdir@@YA?AU_FILE@@U1@PBD@Z 00042e70 f   fat12.obj
+ 0001:00002b40       ?fsys_fat_open@@YA?AU_FILE@@PBD@Z 00042f40 f   fat12.obj
+ 0001:00002ce0       ?fsys_fat_mount@@YAXXZ     000430e0 f   fat12.obj
+ 0001:00002d50       ?fsys_fat_initialize@@YAXXZ 00043150 f   fat12.obj
+ 0001:00002db0       ?dma_initialize_floppy@@YA_NPAEI@Z 000431b0 f   flpy.obj
+ 0001:00002e40       ?flpydsk_send_command@@YAXE@Z 00043240 f   flpy.obj
+ 0001:00002e80       ?i86_flpy_irq@@YAXXZ       00043280 f   flpy.obj
+ 0001:00002eb0       ?flpydsk_calibrate@@YAHE@Z 000432b0 f   flpy.obj
+ 0001:00003080       ?flpydsk_reset@@YAXXZ      00043480 f   flpy.obj
+ 0001:00003200       ?flpydsk_read_sector_imp@@YAXEEE@Z 00043600 f   flpy.obj
+ 0001:00003370       ?flpydsk_seek@@YAHEE@Z     00043770 f   flpy.obj
+ 0001:00003500       ?flpydsk_lba_to_chs@@YAXHPAH00@Z 00043900 f   flpy.obj
+ 0001:00003570       ?flpydsk_read_sector@@YAPAEH@Z 00043970 f   flpy.obj
+ 0001:00003660       ?flpy_do_read_sector@@YAPAEH@Z 00043a60 f   flpy.obj
+ 0001:00003690       ?task_flpy@@YAXXZ          00043a90 f   flpy.obj
+ 0001:00003730       ?volOpenFile@@YA?AU_FILE@@PBD@Z 00043b30 f   fs.obj
+ 0001:000037a0       ?volRegisterFileSystem@@YAXPAU_FILE_SYS@@I@Z 00043ba0 f   fs.obj
+ 0001:000037d0       ?fsys_do_open@@YAHPBD@Z    00043bd0 f   fs.obj
+ 0001:000038b0       ?fsys_do_read@@YAHHPAEI@Z  00043cb0 f   fs.obj
+ 0001:000039c0       ?task_fs@@YAXXZ            00043dc0 f   fs.obj
+ 0001:00003ae0       ?put_key@@YAXPAU_tagTTY@@I@Z 00043ee0 f   tty.obj
+ 0001:00003b20       ?flush@@YAXPAU_tagCONSOLE@@@Z 00043f20 f   tty.obj
+ 0001:00003bb0       ?out_char@@YAXPAU_tagCONSOLE@@D@Z 00043fb0 f   tty.obj
+ 0001:00003c80       ?init_screen@@YAXPAU_tagTTY@@@Z 00044080 f   tty.obj
+ 0001:00003d70       ?select_console@@YAXH@Z    00044170 f   tty.obj
+ 0001:00003d90       ?tty_write@@YAXPAU_tagTTY@@PADH@Z 00044190 f   tty.obj
+ 0001:00003dd0       ?in_process@@YAXPAU_tagTTY@@I@Z 000441d0 f   tty.obj
+ 0001:00003ef0       ?task_tty@@YAXXZ           000442f0 f   tty.obj
+ 0001:00003fe0       ?reset_msg@@YAXPAU_tagMESSAGE@@@Z 000443e0 f   ipc.obj
+ 0001:00004000       ?deadlock@@YAHHH@Z         00044400 f   ipc.obj
+ 0001:000040a0       ?msg_send@@YAHPAU_tagPROC@@HPAU_tagMESSAGE@@@Z 000444a0 f   ipc.obj
+ 0001:000041a0       ?msg_receive@@YAHPAU_tagPROC@@HPAU_tagMESSAGE@@@Z 000445a0 f   ipc.obj
+ 0001:000043b0       ?inform_int@@YAXH@Z        000447b0 f   ipc.obj
+ 0001:00004410       ?kernel_entry@@YAXPAU_tag_boot_info@@@Z 00044810 f   entry.obj
+ 0002:00000000       ??_C@_0FM@GCJJFBAK@An?5internal?5error?5was?5detected?4?5@ 00044a00     exception.obj
+ 0002:00000060       ??_C@_0BJF@NCFJGJOO@?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5?5@ 00044a60     exception.obj
+ 0002:000001f8       ??_C@_0DK@JPDKLIDN@Divide?5by?50?5at?5physical?5address?5@ 00044bf8     exception.obj
+ 0002:00000234       ??_C@_0DK@EDMPBNNJ@Single?5step?5at?5physical?5address?5@ 00044c34     exception.obj
+ 0002:00000270       ??_C@_0DH@GMCEJAGH@NMI?5trap?5at?5physical?5address?5?$FL0x@ 00044c70     exception.obj
+ 0002:000002a8       ??_C@_0DO@HECKHEPE@Breakpoint?5trap?5at?5physical?5addr@ 00044ca8     exception.obj
+ 0002:000002e8       ??_C@_0DM@MNLOBONG@Overflow?5trap?5at?5physical?5addres@ 00044ce8     exception.obj
+ 0002:00000328       ??_C@_0EB@HFKENDCB@Bounds?5check?5fault?5at?5physical?5a@ 00044d28     exception.obj
+ 0002:0000036c       ??_C@_0DN@FMJKFMBE@Invalid?5opcode?5at?5physical?5addre@ 00044d6c     exception.obj
+ 0002:000003b0       ??_C@_0EF@KCMEFAME@Device?5not?5found?5fault?5at?5physic@ 00044db0     exception.obj
+ 0002:000003f8       ??_C@_0DL@BJKFIMCG@Double?5fault?5at?5physical?5address@ 00044df8     exception.obj
+ 0002:00000434       ??_C@_0DK@KHBDCCLO@Invalid?5TSS?5at?5physical?5address?5@ 00044e34     exception.obj
+ 0002:00000470       ??_C@_0DO@CBMNIOP@Invalid?5segment?5at?5physical?5addr@ 00044e70     exception.obj
+ 0002:000004b0       ??_C@_0DK@KPJEDBGP@Stack?5fault?5at?5physical?5address?5@ 00044eb0     exception.obj
+ 0002:000004f0       ??_C@_0EH@GNLNLLGH@General?5Protection?5Fault?5at?5phys@ 00044ef0     exception.obj
+ 0002:00000538       ??_C@_0DB@ONAGEJDI@Page?5Fault?5at?50x?$CFx?30x?$CFx?5refrence@ 00044f38     exception.obj
+ 0002:0000056c       ??_C@_0DI@IOMECPMK@FPU?5Fault?5at?5physical?5address?5?$FL0@ 00044f6c     exception.obj
+ 0002:000005a4       ??_C@_0DO@NIKHDGLG@Alignment?5Check?5at?5physical?5addr@ 00044fa4     exception.obj
+ 0002:000005e4       ??_C@_0DM@OKKADJIB@Machine?5Check?5at?5physical?5addres@ 00044fe4     exception.obj
+ 0002:00000620       ??_C@_0DN@OBNBAIHA@FPU?5SIMD?5fault?5at?5physical?5addre@ 00045020     exception.obj
+ 0002:00000660       ??_C@_0BA@BJOBDCJI@ACPI?5NVS?5Memory?$AA@ 00045060     main.obj
+ 0002:00000670       ??_C@_0N@EHGNOCNM@ACPI?5Reclaim?$AA@ 00045070     main.obj
+ 0002:00000680       ??_C@_08NKCLJDKG@Reserved?$AA@ 00045080     main.obj
+ 0002:0000068c       ??_C@_09PPNHOLKJ@Available?$AA@ 0004508c     main.obj
+ 0002:00000698       ??_C@_0EB@LGNJJLBD@?5?5region?5?$CFd?3?5start?3?50x?$CFx?$CFx?5lengt@ 00045098     main.obj
+ 0002:000006dc       ??_C@_0N@LJEOFCP@Memory?5map?3?6?$AA@ 000450dc     main.obj
+ 0002:000006ec       ??_C@_0BN@OPOBFDOJ@Memory?5size?3?5?$CFd?5KBs?$CI?$CFd?5MB?$CJ?4?6?$AA@ 000450ec     main.obj
+ 0002:0000070c       ??_C@_05KPFBFMFL@Init?6?$AA@ 0004510c     proc.obj
+ 0002:00000714       ??_C@_0L@ILIMGEIG@interrupt?6?$AA@ 00045114     idt.obj
+ 0002:00000728       ??_C@_0CB@PBEMOEKF@Keyboard?5irq?5handler?5installed?4?6@ 00045128     kbd.obj
+ 0002:0000074c       ??_C@_05HOBJIFPH@FAT12?$AA@ 0004514c     fat12.obj
+ 0002:00000754       ??_C@_0BF@BKAPIIHL@Floppy?5initialized?4?6?$AA@ 00045154     flpy.obj
+ 0002:0000076c       ??_C@_0BB@PADLHMOI@FS?5initialized?4?6?$AA@ 0004516c     fs.obj
+ 0002:00000780       ??_C@_03NBPCCBKM@?$DN_?$DN?$AA@ 00045180     ipc.obj
+ 0002:00000784       ??_C@_04CKOMMCPL@?9?$DO?$CFs?$AA@ 00045184     ipc.obj
+ 0002:0000078c       ??_C@_05HEEPJMHH@?$DN_?$DN?$CFs?$AA@ 0004518c     ipc.obj
+ 0002:00000794       ??_C@_0BL@HFEDFKHD@Kernel?5size?3?5?$CFd?$CIsectors?$CJ?4?6?$AA@ 00045194     entry.obj
+ 0003:00000008       ?strMemoryTypes@@3PAPADA   00045208     main.obj
+ 0003:00000018       ?task_table@@3PAU_tagTASK@@A 00045218     proc.obj
+ 0003:00000088       ?user_proc_table@@3PAU_tagTASK@@A 00045288     proc.obj
+ 0003:000000c0       ?task_stack@@3PADA         000452c0     proc.obj
+ 0003:000000c4       ?sys_call_table@@3PAP6AXXZA 000452c4     syscall.obj
+ 0003:000000d0       ?bchars@@3PADA             000452d0     stdio.obj
+ 0003:000000e0       ?_color@@3EA               000452e0     dbg.obj
+ 0003:000000e4       ?video_memory@@3PAGA       000452e4     dbg.obj
+ 0003:000000e8       ?keymap@@3PAIA             000452e8     kbd.obj
+ 0003:000006e8       ?file_table@@3PAU_FILE@@A  000458e8     fs.obj
+ 0003:000006f0       ?save_ret_addr@@3IA        000458f0     proc.obj
+ 0003:000006f4       ?ldtr@@3GA                 000458f4     proc.obj
+ 0003:000006f8       ?stack_top@@3U<unnamed-tag>@@A 000458f8     proc.obj
+ 0003:00000f00       ?tss@@3U_tagTSS@@A         00046100     proc.obj
+ 0003:00000f6c       ?ticks@@3IA                0004616c     proc.obj
+ 0003:00000f70       ?proc_table@@3PAU_tagPROC@@A 00046170     proc.obj
+ 0003:00002ab8       ?p_proc_ready@@3PAU_tagPROC@@A 00047cb8     proc.obj
+ 0003:00002abc       ?p_current_proc@@3PAU_tagPROC@@A 00047cbc     syscall.obj
+ 0003:00002ac0       ?sys_call_num@@3IA         00047cc0     syscall.obj
+ 0003:00002ac4       ?ret_val@@3IA              00047cc4     syscall.obj
+ 0003:00002ad8       ?_cur_directory@@3PAUpdirectory@@A 00047cd8     vmm.obj
+ 0003:00002adc       ?_cur_pdbr@@3IA            00047cdc     vmm.obj
+ 0003:00002ae0       ?_gdtr@@3Ugdtr@@A          00047ce0     gdt.obj
+ 0003:00002ae8       ?_gdt@@3PAUgdt_descriptor@@A 00047ce8     gdt.obj
+ 0003:000032e8       ?k_reenter@@3HA            000484e8     idt.obj
+ 0003:000032f0       ?idt@@3PAUgate@@A          000484f0     idt.obj
+ 0003:00003af0       ?_idtr@@3Uidtr@@A          00048cf0     idt.obj
+ 0003:00003af8       ?tbuf@@3PADA               00048cf8     stdio.obj
+ 0003:00003b18       ?cursor_x@@3EA             00048d18     dbg.obj
+ 0003:00003b19       ?cursor_y@@3EA             00048d19     dbg.obj
+ 0003:00003b1c       ?_scan_code@@3EA           00048d1c     kbd.obj
+ 0003:00003b20       ?caps_lock@@3HA            00048d20     kbd.obj
+ 0003:00003b24       ?shift_r@@3HA              00048d24     kbd.obj
+ 0003:00003b28       ?column@@3HA               00048d28     kbd.obj
+ 0003:00003b2c       ?ctrl_l@@3HA               00048d2c     kbd.obj
+ 0003:00003b30       ?scroll_lock@@3HA          00048d30     kbd.obj
+ 0003:00003b34       ?shift_l@@3HA              00048d34     kbd.obj
+ 0003:00003b38       ?num_lock@@3HA             00048d38     kbd.obj
+ 0003:00003b3c       ?alt_r@@3HA                00048d3c     kbd.obj
+ 0003:00003b40       ?alt_l@@3HA                00048d40     kbd.obj
+ 0003:00003b44       ?kbd_in@@3U_tagS_KB@@A     00048d44     kbd.obj
+ 0003:00003b70       ?ctrl_r@@3HA               00048d70     kbd.obj
+ 0003:00003b74       ?code_with_E0@@3HA         00048d74     kbd.obj
+ 0003:00003b78       ?_mnt_info@@3U_MOUNT_INFO@@A 00048d78     fat12.obj
+ 0003:00003b94       ?_fs_fat@@3U_FILE_SYS@@A   00048d94     fat12.obj
+ 0003:00003bb0       ?FAT@@3PAEA                00048db0     fat12.obj
+ 0003:00003fb4       ?fsmsg@@3U_tagMESSAGE@@A   000491b4     fs.obj
+ 0003:00003fe4       ?_fsys@@3PAPAU_FILE_SYS@@A 000491e4     fs.obj
+ 0003:00003ff8       ?console_table@@3PAU_tagCONSOLE@@A 000491f8     tty.obj
+ 0003:00004028       ?tty_table@@3PAU_tagTTY@@A 00049228     tty.obj
+ 0003:00004c58       ?nr_current_console@@3IA   00049e58     tty.obj
+ 0003:00004c5c       ?disp_pos@@3IA             00049e5c     tty.obj
+ 0003:00004c60       ?kernelSize@@3GA           00049e60     entry.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+
